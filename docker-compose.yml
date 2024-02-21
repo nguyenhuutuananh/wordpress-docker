@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_PASSWORD: ${SITE_DB_PASSWORD}
       WORDPRESS_DB_NAME: ${SITE_DB_NAME}
     volumes:
-      - ./wordpress:/var/www/html
+      - ../source:/var/www/html
   mysql:
     image: mysql
     restart: always
